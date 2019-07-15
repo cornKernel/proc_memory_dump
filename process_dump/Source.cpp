@@ -7,13 +7,14 @@ using namespace std;
 #include "helpers.h"
 
 int main() {
-
+	
 	const DWORD Flags = MiniDumpWithFullMemory |
 		MiniDumpWithFullMemoryInfo |
 		MiniDumpWithHandleData |
 		MiniDumpWithUnloadedModules |
 		MiniDumpWithThreadInfo;
 
+	//name of the process to dump
 	char* processToDump = "explorer.exe";
 
 	DWORD ProcId = GetProcId(processToDump);
