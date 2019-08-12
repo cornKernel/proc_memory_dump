@@ -6,4 +6,3 @@
 using namespace std;
 
 DWORD GetProcId(char* ProcName);
-
